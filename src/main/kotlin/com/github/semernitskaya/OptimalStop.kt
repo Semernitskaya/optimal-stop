@@ -14,7 +14,8 @@ class OptimalStop(private val n: Int) {
 
     private var max = MIN_SCORE
     private var currentIndex = 0
-    private var stopped = false
+    var stopped = false
+        private set
 
     fun accept(score: Int): Boolean {
         if (stopped) {
